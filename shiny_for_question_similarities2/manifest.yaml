@@ -1,0 +1,10 @@
+---
+applications:  
+- name: shiny_for_question_similarities
+  memory: 8000M
+  instances: 1
+  buildpack: https://github.com/wjjung317/heroku-buildpack-r.git
+  env:
+    CRAN_MIRROR: https://cran.rstudio.com
+    CF_STAGING_TIMEOUT: 9999999
+    CF_STARTUP_TIMEOUT: 9999999
